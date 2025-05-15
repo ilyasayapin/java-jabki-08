@@ -11,7 +11,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double area () {
-        return (this.width * this.height);
+        return (Math.round(this.width * this.height * 100.0) / 100.0);
     }
 
     @Override
