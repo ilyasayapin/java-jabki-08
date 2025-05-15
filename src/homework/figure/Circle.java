@@ -8,7 +8,13 @@ public class Circle extends Shape {
     }
 
     @Override
+    public double area () {
+        return (Math.PI * this.radius * this.radius);
+    }
+
+    @Override
     public void displayArea () {
-        System.out.println("Площадь круга = " + Math.PI * this.radius * this.radius);
+        super.displayArea();
+        System.out.println(area());
     }
 }
