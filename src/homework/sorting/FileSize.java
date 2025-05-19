@@ -9,8 +9,8 @@ public class FileSize implements Sortable {
 
     @Override
     public int compare(Sortable other) {
-        FileSize person = (FileSize) other;
-        return Integer.compare(this.size, person.size);
+        FileSize fileSize = (FileSize) other;
+        return Integer.compare(this.size, fileSize.size);
     }
 
     @Override
