@@ -18,11 +18,11 @@ public class Sort {
                     int resultTwo = array[z].compare(array[z - 1]);
                     if (resultTwo < 0) {
                         swap(array, z, z - 1);
+                    } else {
+                        break;
                     }
-                    break;
                 }
             }
         }
     }
-
 }
