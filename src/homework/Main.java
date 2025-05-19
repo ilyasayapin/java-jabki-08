@@ -7,6 +7,10 @@ import homework.files.CalculateTotalSize;
 import homework.files.File;
 import homework.files.ImageFile;
 import homework.files.TextFile;
+import homework.sorting.FileSize;
+import homework.sorting.Person;
+import homework.sorting.Sort;
+import homework.sorting.Sortable;
 import homework.sound.*;
 import homework.transport.Airplane;
 import homework.transport.Bicycle;
@@ -15,6 +19,7 @@ import homework.transport.Transport;
 import org.w3c.dom.UserDataHandler;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,20 +44,39 @@ public class Main {
         imageFile.getSize();
         System.out.println();
 
-        File[] files = new File[] {
+        File[] files = new File[]{
                 new TextFile("Пример"),
                 new ImageFile(5, 10, 4)
         };
         CalculateTotalSize.totalSize(files);
         System.out.println();
 
-        Transport[] vehicles = new Transport[] {
+        Transport[] vehicles = new Transport[]{
                 new Bicycle(),
                 new Airplane()
         };
         StartRace.startRace(vehicles);
         System.out.println();
 
+        Sortable[] cheloveki = new Sortable[]{
+                new Person(5),
+                new Person(6),
+                new Person(2),
+                new Person(2),
+        };
+        System.out.println("Исходный порядок людей: " + Arrays.toString(cheloveki));
+        Sort.sort(cheloveki);
+        System.out.println("Сортировка людей по возрасту: " + Arrays.toString(cheloveki));
+        System.out.println();
 
+        Sortable[] dokumenty = new Sortable[]{
+                new FileSize(23),
+                new FileSize(5),
+                new FileSize(17),
+                new FileSize(1),
+        };
+        System.out.println("Исходный порядок файлов: " + Arrays.toString(cheloveki));
+        Sort.sort(dokumenty);
+        System.out.println("Сортировка файлов по размеру: " + Arrays.toString(cheloveki));
     }
 }
