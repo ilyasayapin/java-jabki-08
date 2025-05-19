@@ -16,11 +16,10 @@ public class Sort {
                 swap(array, i, i - 1);
                 for (int z = i - 1; (z - 1) >= 0; z--) {
                     int resultTwo = array[z].compare(array[z - 1]);
-                    if (resultTwo < 0){
+                    if (resultTwo < 0) {
                         swap(array, z, z - 1);
-                    } else {
-                        break;
                     }
+                    break;
                 }
             }
         }

@@ -9,14 +9,16 @@ public class Person implements Sortable {
         this.age = age;
     }
 
-    public int getAge(Person person) {
-        return age;
-    }
-
     @Override
     public int compare(Sortable other) {
         Person person = (Person) other;
         return Integer.compare(this.age, person.age);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s", age);
+    }
 }
+
 

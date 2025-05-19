@@ -16,9 +16,7 @@ import homework.transport.Airplane;
 import homework.transport.Bicycle;
 import homework.transport.StartRace;
 import homework.transport.Transport;
-import org.w3c.dom.UserDataHandler;
 
-import java.awt.*;
 import java.util.Arrays;
 
 public class Main {
@@ -62,7 +60,7 @@ public class Main {
                 new Person(5),
                 new Person(6),
                 new Person(2),
-                new Person(2),
+                new Person(1),
         };
         System.out.println("Исходный порядок людей: " + Arrays.toString(cheloveki));
         Sort.sort(cheloveki);
@@ -75,8 +73,8 @@ public class Main {
                 new FileSize(17),
                 new FileSize(1),
         };
-        System.out.println("Исходный порядок файлов: " + Arrays.toString(cheloveki));
+        System.out.println("Исходный порядок файлов: " + Arrays.toString(dokumenty));
         Sort.sort(dokumenty);
-        System.out.println("Сортировка файлов по размеру: " + Arrays.toString(cheloveki));
+        System.out.println("Сортировка файлов по размеру: " + Arrays.toString(dokumenty));
     }
 }

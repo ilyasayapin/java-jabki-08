@@ -12,4 +12,9 @@ public class FileSize implements Sortable {
         FileSize person = (FileSize) other;
         return Integer.compare(this.size, person.size);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s", size);
+    }
 }
