@@ -3,17 +3,17 @@ package homework.figure;
 public class Circle extends Shape {
     int radius;
 
-    public Circle (int radius) {
+    public Circle(int radius) {
         this.radius = radius;
     }
 
     @Override
-    public double area () {
+    public double area() {
         return (Math.round(Math.PI * this.radius * this.radius * 100.0) / 100.0);
     }
 
     @Override
-    public void displayArea () {
+    public void displayArea() {
         super.displayArea();
         System.out.println(area());
     }

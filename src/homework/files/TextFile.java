@@ -3,7 +3,7 @@ package homework.files;
 public class TextFile extends File {
     String content;
 
-    public TextFile (String content) {
+    public TextFile(String content) {
         this.content = content;
     }
 
