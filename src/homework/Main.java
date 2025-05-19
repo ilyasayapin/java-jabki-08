@@ -39,14 +39,14 @@ public class Main {
         imageFile.getSize();
         System.out.println();
 
-        File[] files = new File[]{
+        File[] files = new File[] {
                 new TextFile("Пример"),
                 new ImageFile(5, 10, 4)
         };
         CalculateTotalSize.totalSize(files);
         System.out.println();
 
-        Transport[] vehicles = new Transport[]{
+        Transport[] vehicles = new Transport[] {
                 new Bicycle(),
                 new Airplane()
         };
