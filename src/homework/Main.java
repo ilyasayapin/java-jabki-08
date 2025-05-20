@@ -36,15 +36,15 @@ public class Main {
         Player.playAllSounds(devices);
         System.out.println();
 
-        TextFile textFile = new TextFile("Пример");
-        ImageFile imageFile = new ImageFile(5, 10, 4);
+        TextFile textFile = new TextFile("Текст", "Пример");
+        ImageFile imageFile = new ImageFile("Фото", 5, 10, 4);
         textFile.getSize();
         imageFile.getSize();
         System.out.println();
 
         File[] files = new File[]{
-                new TextFile("Пример"),
-                new ImageFile(5, 10, 4)
+                new TextFile("Текст", "Пример"),
+                new ImageFile("Фото", 5, 10, 4)
         };
         CalculateTotalSize.totalSize(files);
         System.out.println();

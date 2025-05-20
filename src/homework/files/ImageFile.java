@@ -5,7 +5,8 @@ public class ImageFile extends File {
     private int height;
     private int bytesPerPixel;
 
-    public ImageFile(int width, int height, int bytesPerPixel) {
+    public ImageFile(String name, int width, int height, int bytesPerPixel) {
+        super(name);
         this.width = width;
         this.height = height;
         this.bytesPerPixel = bytesPerPixel;
@@ -14,7 +15,8 @@ public class ImageFile extends File {
     @Override
     public long getSize() {
         long length = this.width * this.height * this.bytesPerPixel;
-        System.out.println("Вес изображения: " + length + " байт");
+        System.out.printf("Вес %s: %s байт", super.getName(), length);
+        System.out.println();
         return length;
     }
 }
