@@ -1,8 +1,8 @@
 package homework.figure;
 
 public class Rectangle extends Shape {
-    int width;
-    int height;
+    private int width;
+    private int height;
 
     public Rectangle(int width, int height) {
         this.width = width;

@@ -1,7 +1,7 @@
 package homework.figure;
 
 public class Circle extends Shape {
-    int radius;
+    private int radius;
 
     public Circle(int radius) {
         this.radius = radius;
