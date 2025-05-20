@@ -50,8 +50,8 @@ public class Main {
         System.out.println();
 
         Transport[] vehicles = new Transport[]{
-                new Bicycle(),
-                new Airplane()
+                new Bicycle(60),
+                new Airplane(800)
         };
         StartRace.startRace(vehicles);
         System.out.println();
