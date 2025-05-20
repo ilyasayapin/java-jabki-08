@@ -15,6 +15,6 @@ public class Circle extends Shape {
     @Override
     public void displayArea() {
         super.displayArea();
-        System.out.println(area());
+        System.out.println("круг = " + area());
     }
 }
