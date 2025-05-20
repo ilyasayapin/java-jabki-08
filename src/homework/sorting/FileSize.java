@@ -1,7 +1,7 @@
 package homework.sorting;
 
 public class FileSize implements Sortable {
-    int size;
+    private int size;
 
     public FileSize(int size) {
         this.size = size;

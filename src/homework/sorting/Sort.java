@@ -2,7 +2,6 @@ package homework.sorting;
 
 public class Sort {
 
-
     private static void swap(Sortable[] array, int indOne, int indTwo) {
         Sortable tmp = array[indOne];
         array[indOne] = array[indTwo];

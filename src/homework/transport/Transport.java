@@ -1,8 +1,7 @@
 package homework.transport;
 
 public abstract class Transport {
-    int speed;
-
+   private int speed;
 
     public abstract void move();
 }

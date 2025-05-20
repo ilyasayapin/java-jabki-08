@@ -3,7 +3,7 @@ package homework.sorting;
 import java.util.Arrays;
 
 public class Person implements Sortable {
-    int age;
+    private int age;
 
     public Person(int age) {
         this.age = age;
