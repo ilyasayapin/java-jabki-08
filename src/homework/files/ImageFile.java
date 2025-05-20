@@ -1,9 +1,9 @@
 package homework.files;
 
 public class ImageFile extends File {
-    int width;
-    int height;
-    int bytesPerPixel;
+    private int width;
+    private int height;
+    private int bytesPerPixel;
 
     public ImageFile(int width, int height, int bytesPerPixel) {
         this.width = width;

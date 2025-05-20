@@ -1,8 +1,7 @@
 package homework.files;
 
 public abstract class File {
-    String name;
+    private String name;
 
     public abstract long getSize();
-
 }
