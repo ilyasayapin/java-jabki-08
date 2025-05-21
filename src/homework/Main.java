@@ -28,7 +28,7 @@ public class Main {
         }
         System.out.println();
 
-        SoundEmitter[] devices = new SoundEmitter[]{
+        SoundEmitter[] devices = new SoundEmitter[] {
                 new Dog(),
                 new AlarmClock(),
                 new CarHorn()
@@ -42,21 +42,21 @@ public class Main {
         imageFile.getSize();
         System.out.println();
 
-        File[] files = new File[]{
+        File[] files = new File[] {
                 new TextFile("Текст", "Пример"),
                 new ImageFile("Фото", 5, 10, 4)
         };
         CalculateTotalSize.totalSize(files);
         System.out.println();
 
-        Transport[] vehicles = new Transport[]{
+        Transport[] vehicles = new Transport[] {
                 new Bicycle(60),
                 new Airplane(800)
         };
         StartRace.startRace(vehicles);
         System.out.println();
 
-        Sortable[] cheloveki = new Sortable[]{
+        Sortable[] cheloveki = new Sortable[] {
                 new Person(5),
                 new Person(6),
                 new Person(2),
@@ -67,7 +67,7 @@ public class Main {
         System.out.println("Сортировка людей по возрасту: " + Arrays.toString(cheloveki));
         System.out.println();
 
-        Sortable[] dokumenty = new Sortable[]{
+        Sortable[] dokumenty = new Sortable[] {
                 new FileSize(23),
                 new FileSize(5),
                 new FileSize(17),
