@@ -8,6 +8,6 @@ public class Airplane extends Transport {
 
     @Override
     public void move() {
-        System.out.println("Самолет летит по небу со скоростью " + super.getSpeed() + "км/ч" );
+        System.out.println("Самолет летит по небу со скоростью " + getSpeed() + "км/ч");
     }
 }
